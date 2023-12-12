@@ -2,6 +2,8 @@
  
 This project deals with a real world problem faced by UPI payment based fintechs companies.
 
+An idea of subscription based ser0vice is already in use for comercial transaaction for traders. 
+
 Problem Statement:
 
 ![Transaction](https://github.com/iwineye/UPI_SUBSCRIBER_CHURN/assets/96835772/80a27815-6ade-48e7-8097-71e05c89108e)
@@ -34,5 +36,22 @@ This can be possible only when they have a subscription based model for its cust
 
 transaction expereince. 
 
+It is important to note that a similar practice in the form of taxation is already being immplemented on a commercial level for 
 
-Using Artificial Neural Network we will predict who is more likely to opt out in for this service and who is isn't. 
+merchants as interchange fee but not yet to normal customers. 
+
+[Reference](https://cleartax.in/s/upi-transaction-charges)
+
+Dataset: 
+
+The dataset is hypothetical and is built using parameters that are likely to considered, when and if the service is to be rolled to the 
+
+general public. Parameters include CUSTOMER_ID,	GENDER,	AVG_MONTHLY_TRANSACTIONS,	RESIDENTIAL	,Bank_type	,SUBSCRIPTION_STATUS (CHURN).
+
+
+Objectives :
+
+1. Using Artificial Neural Network predict who is more likely to opt out in for this service and who is isn't. 
+
+
+
