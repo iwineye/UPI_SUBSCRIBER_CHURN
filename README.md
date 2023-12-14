@@ -1,8 +1,8 @@
 # UPI_SUBSCRIBER_CHURN.
  
-This project deals with a real world problem faced by UPI payment based fintechs companies.
+This project deals with a real world problem faced by UPI payment based fintech companies.
 
-An idea of subscription based ser0vice is already in use for comercial transaaction for traders. 
+An idea of subscription based service is already in use for comercial transaaction for traders. 
 
 Problem Statement:
 
@@ -55,7 +55,7 @@ is to be rolled out to the general customers.
 Parameters include CUSTOMER_ID,	GENDER,	AVG_MONTHLY_TRANSACTIONS,	RESIDENTIAL	,Bank_type	,SUBSCRIPTION_STATUS (CHURN).
 
 
-Objectives :
+Objective :
 
 1. Using Decison Tree algorithm to predict who is more likely to opt in for the upcoming new subscription .
 
