@@ -1,10 +1,13 @@
 # UPI_SUBSCRIBER_CHURN.
- 
-This project deals with a real world problem faced by UPI payment based fintech companies.
+Foreword:
+This project deals with the solution to a real world problem faced by UPI payment based fintech companies. 
 
-An idea of subscription based service is already in use for comercial transaaction for traders. 
+##Objective :
 
-Problem Statement:
+1. Using Decison Tree algorithm to predict who is more likely to opt in for the upcoming new subscription .
+
+
+##Problem Statement:
 
 ![Transaction](https://github.com/iwineye/UPI_SUBSCRIBER_CHURN/assets/96835772/80a27815-6ade-48e7-8097-71e05c89108e)
 
@@ -12,52 +15,68 @@ From the above diagram we can understand the communication involved behind every
 
 UPI's have successfully bipassed the banks when it comes to payments in day to day transactions.
 
-The major road block appears to be the shortage of IT infrastructure often on the side Banks and UPI system.
+But their services are severly effected by bank's poor infrastructure. They can be incentivised by payment apps to upgrade their 
 
-which is controlled by.
+infrastructure.To recover their costs payment apps can introduce a subscription model.This project deals with that scenario where 
 
-Even though the service provider may have the industry level IT infrastructure the efficiency of their service 
+a company would want to know if their users are willing to take a subscription.This can be done using the churn data of the 
 
-equally relies upon the IT infrastructure of other governance bodies such as RBI and UPI and BANK'S 
+merchants who have left using the app with the recent government decision to tax payment transactions on merchants using payement 
 
-who are the key players in approval of a digital transaciton and record keeping between payee and reciever.
+apps.
 
-While banks are being bypassed by the UPI Payment apps there is little to no incentive for the banks to upgrade their IT 
-
-infrastructure to meet the demand of the growing UPI transactions leading to dead lock.
-
-One plausible solution for the UPI companies is to incentivise select banks or group of banks based on their custmoer base.
-
-By investing in the bank's infrastructure with seperate payment lines for their own customers this problem can be dealt to much 
-
-extent.
-
-This can be possible only when they have a subscription based model for its customers with nominal charges in return for a seemless 
-
-transaction expereince. 
-
-It is important to note that a similar practice in the form of taxation is already being immplemented on a commercial level for 
-
-merchants as interchange fee but not yet to normal customers. 
+Given the rise in volume of transactions a subsription based payment service is not a far fetched idea.
 
 [Reference](https://cleartax.in/s/upi-transaction-charges)
 
-Dataset: 
+##Dataset: 
 
-The dataset is based on the above the merchants who are already using this service. If this service is launched for remaining public 
+The dataset is based on the above the merchants who are still using after the change in goverment policy. If this service is
 
-the data from existing public will be of good help to roughly estimate the new subscribers. This model is built on thhat assumption.
+launched for remaining public.The data from regular users will be of good help to roughly estimate the new subscribers. This model is built on that assumption.
 
 Therefore the Data used here is hypothetical and is built using parameters  that are likely to considered, when and if the service
-
 is to be rolled out to the general customers.
 
-Parameters include CUSTOMER_ID,	GENDER,	AVG_MONTHLY_TRANSACTIONS,	RESIDENTIAL	,Bank_type	,SUBSCRIPTION_STATUS (CHURN).
+Parameters include in the data CUSTOMER_ID,	GENDER,	AVG_MONTHLY_TRANSACTIONS,DAILY_USAGE_TIME,RESIDENTIAL_STATUS,Bank_type,SUBSCRIPTION_STATUS.
 
 
-Objective :
+## WOKRING 
 
-1. Using Decison Tree algorithm to predict who is more likely to opt in for the upcoming new subscription .
+Used Decision tree classifier on the data and predicted the churn data. 
+(Refer to the notebook file for more.)
+
+Used one hot encoding to handle categorical variables and dropped the first columns to avoid multicollinearity. 
+
+We saved the model in a pickle file as predictionmodel.pkl.
+
+Web app interface is based on 1 and zero for categorial variables. 
+
+Note: There are three categories in bank type and only two columns in the interface.
+      So you will get an output when you use two bank types as 0. Implying you selected the 
+      third category.
+
+##TEST CASES
+
+
+![Positive Outcome](snap1.PNG)
+
+![Alt text](prediction.PNG)
+
+![Negative Outcome](snap2.PNG)
+
+![Alt text](snap3.PNG)
+## How to Install and Run the Project
+
+1.Clone the repo
+2.Create a virtual environment
+3.Install Flask
+4.Install pickle
+5.Install anaconda
+6.Run app.py in local server
+7.Input the variables and press enter.
+
+
 
 
 
