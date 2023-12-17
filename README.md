@@ -2,12 +2,12 @@
 Foreword:
 This project deals with the solution to a real world problem faced by UPI payment based fintech companies. 
 
-##Objective :
+## Objective :
 
-1. Using Decison Tree algorithm to predict who is more likely to opt in for the upcoming new subscription .
+Using Decison Tree algorithm to predict who is more likely to opt in for the upcoming new subscription .
 
 
-##Problem Statement:
+## Problem Statement:
 
 ![Transaction](https://github.com/iwineye/UPI_SUBSCRIBER_CHURN/assets/96835772/80a27815-6ade-48e7-8097-71e05c89108e)
 
@@ -29,7 +29,7 @@ Given the rise in volume of transactions a subsription based payment service is 
 
 [Reference](https://cleartax.in/s/upi-transaction-charges)
 
-##Dataset: 
+## Dataset: 
 
 The dataset is based on the above the merchants who are still using after the change in goverment policy. If this service is
 
@@ -56,7 +56,7 @@ Note: There are three categories in bank type and only two columns in the interf
       So you will get an output when you use two bank types as 0. Implying you selected the 
       third category.
 
-##TEST CASES
+## TEST CASES
 
 
 ![Positive Outcome](snap1.PNG)
