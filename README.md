@@ -1,8 +1,8 @@
 # UPI_SUBSCRIBER_CHURN.
  
-This project deals with a real world problem faced by UPI payment based fintechs companies.
+This project deals with a real world problem faced by UPI payment based fintech companies.
 
-An idea of subscription based ser0vice is already in use for comercial transaaction for traders. 
+An idea of subscription based service is already in use for comercial transaaction for traders. 
 
 Problem Statement:
 
@@ -44,14 +44,20 @@ merchants as interchange fee but not yet to normal customers.
 
 Dataset: 
 
-The dataset is hypothetical and is built using parameters that are likely to considered, when and if the service is to be rolled to the 
+The dataset is based on the above the merchants who are already using this service. If this service is launched for remaining public 
 
-general public. Parameters include CUSTOMER_ID,	GENDER,	AVG_MONTHLY_TRANSACTIONS,	RESIDENTIAL	,Bank_type	,SUBSCRIPTION_STATUS (CHURN).
+the data from existing public will be of good help to roughly estimate the new subscribers. This model is built on thhat assumption.
+
+Therefore the Data used here is hypothetical and is built using parameters  that are likely to considered, when and if the service
+
+is to be rolled out to the general customers.
+
+Parameters include CUSTOMER_ID,	GENDER,	AVG_MONTHLY_TRANSACTIONS,	RESIDENTIAL	,Bank_type	,SUBSCRIPTION_STATUS (CHURN).
 
 
-Objectives :
+Objective :
 
-1. Using Artificial Neural Network predict who is more likely to opt out in for this service and who is isn't. 
+1. Using Decison Tree algorithm to predict who is more likely to opt in for the upcoming new subscription .
 
 
 
