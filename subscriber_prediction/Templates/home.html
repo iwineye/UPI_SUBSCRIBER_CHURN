@@ -1,0 +1,25 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> SUBSCRIBER PREDICTION </h1><br>
+
+        <h2>Enter 1 for YES and 0 for NO</h2>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> AVG_MONTHLY_TRANSACTIONS :  <input type="text", name='a', placeholder="enter 1"> <br><br>
+            DAILY_AVG_APP_DURATION :  <input type="text", name='b', placeholder="enter 2"> <br><br>
+            GENDER_M:  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            RESIDENTIAL_STATUS_URBAN : <input type="text", name='d', placeholder="enter 4"> <br><br><br>
+            GVT_BANK_ACCOUNT:  <input type="text", name='e', placeholder="enter 5"> <br><br>
+            PVT_BANK_ACCOUNT: <input type="text", name='f', placeholder="enter 6"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src='static\img3.PNG' alt="Waiting">
+        
+    </center>
+
+    </body>
+</html>
